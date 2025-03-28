@@ -78,7 +78,7 @@ public class CuentaCorriente {
         System.out.println("=========Informacion=========");
         System.out.println("Banco: "+this.nombreBanco);
         if(gestorBanco != null){
-        System.out.println("Gestor: "+this.gestorBanco);
+              gestorBanco.mostrarInformacion();
         }
         System.out.println("Titular: "+this.nombre);
         System.out.println("Dni: "+this.dni);

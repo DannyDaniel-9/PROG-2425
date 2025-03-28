@@ -7,8 +7,6 @@ public static void main (String [] args){
     
     CuentaCorriente cuenta1 = new CuentaCorriente ("123456789" , "Fiorella Arce" , gestor1 );
     
-    cuenta1.mostrarInformacion();
-    
-
+    cuenta1.mostrarInformacion();    
 }
 }

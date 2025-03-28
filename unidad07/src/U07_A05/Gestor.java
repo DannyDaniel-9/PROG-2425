@@ -20,6 +20,11 @@ public class Gestor {
         return telefonoGestor;
     }
     
-    
-    
+    public void mostrarInformacion() {
+        System.out.println("=======Gestor=======");
+        System.out.println(nombreGestor);
+        System.out.println(telefonoGestor);
+        System.out.println(importeMaximo);
+        System.out.println("====================");
+    }           
 }
