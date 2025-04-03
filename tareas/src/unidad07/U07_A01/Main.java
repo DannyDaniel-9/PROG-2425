@@ -1,4 +1,4 @@
-package U07_A03;
+package U07_A01;
 public class Main {
   
     public static void main(String[] args){
