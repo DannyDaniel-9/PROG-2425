@@ -18,7 +18,7 @@ public class CuentaCorriente {
     public CuentaCorriente (String dni ,  String nombre , double saldo ){ //constructor principal        
         this.dni = dni;
         this.nombre = nombre;
-        this.saldo = saldo ;       
+        this.saldo = saldo;         
     }
     
     public CuentaCorriente(String dni, String nombre) { // constructor sobrecargado
