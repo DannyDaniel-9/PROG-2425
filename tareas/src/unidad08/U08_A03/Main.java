@@ -1,3 +1,9 @@
+/*
+3. Añadir a la clase HoraExacta un método que compare si dos horas (la invocante y otra pasada
+como parámetro de entrada al método) son iguales o distintas.
+
+NOTA: utiliza equals() con @Override.
+*/
 package unidad08.U08_A03;
 public class Main {
     
