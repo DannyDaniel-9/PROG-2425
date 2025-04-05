@@ -13,10 +13,10 @@ indicado a los segundos.
 • toString(), que devuelve un String con la representación de la hora exacta (utiliza
 @Override).
  */
-package unidad08.U08_A02;
+package unidad08.U08_A03;
 public class HoraExacta extends Hora{
     protected int segundo;
-    protected final int LIMITE_SEGUNDO = 59;
+    protected int LIMITE_SEGUNDO = 59;
     
     HoraExacta(int hora, int minuto , int segundo) {
         super(hora, minuto);
@@ -62,5 +62,15 @@ public class HoraExacta extends Hora{
         String hora;
         hora = "Hora exacta ---> "+this.hora+":"+this.minuto+":"+this.segundo;
         return hora;
-    }        
+    }       
+    
+    @Override
+    public boolean equals(Object otro){
+        HoraExacta otraHora = (HoraExacta) otro;
+        
+        if (this.hora == otraHora.hora &&  this.minuto == otraHora.minuto && this.segundo == otraHora.segundo)
+            return true;
+        else
+            return false;                
+    }
 }

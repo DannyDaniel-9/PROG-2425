@@ -14,7 +14,7 @@ Devuelve true o false según haya sido posible cambiar la hora o no.
 
 • toString(), que devuelve un String con la representación de la hora (utiliza @Override).
  */
-package unidad08.U08_A02;
+package unidad08.U08_A03;
 public class Hora {
     protected int hora;
     protected int minuto;
