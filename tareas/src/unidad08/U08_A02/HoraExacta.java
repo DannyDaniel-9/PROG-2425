@@ -59,7 +59,7 @@ public class HoraExacta extends Hora{
     }
     
     @Override
-    public String toString(){
+    public String toString(){ // Como ya tiene el toString overrideado en el main solo hay que poner System.out.println (nombreObjeto) ;
         String hora;
         hora = "Hora exacta ---> "+this.hora+":"+this.minuto+":"+this.segundo;
         return hora;
