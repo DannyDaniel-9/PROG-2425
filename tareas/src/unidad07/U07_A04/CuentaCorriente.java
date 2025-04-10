@@ -10,7 +10,7 @@ pertenecen todas las cuentas corrientes).
 package U07_A04;
 public class CuentaCorriente {
     
-    private String nombreBanco = "Bancocodrilo";
+    static private String nombreBanco = "Bancocodrilo";
     public String nombre;
     private double saldo;
     String dni;
