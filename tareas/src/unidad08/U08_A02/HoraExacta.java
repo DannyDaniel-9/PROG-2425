@@ -18,11 +18,10 @@ public class HoraExacta extends Hora{
     protected int segundo;
     protected final int LIMITE_SEGUNDO = 59;
     
-    HoraExacta(int hora, int minuto , int segundo) { //Habria que poner un metodo para comprobar si los segundos son correctos , si no lo fueran todos los tipos primitivos numericos se inicializan a 0 por defecto
+    HoraExacta(int hora, int minuto , int segundo) {
         super(hora, minuto);
         this.segundo = segundo;
-    } // puedo usar el boolean setSegundo para las comprobaciones en lugar del metodo horaCorrecta.
-  
+    }
       
     boolean horaCorrecta(int hora , int minuto , int segundo){
         return hora <= LIMITE_HORA && hora >= 0 && minuto <= LIMITE_MINUTO && minuto >= 0 && segundo <= LIMITE_SEGUNDO && segundo >= 0;        
@@ -59,7 +58,7 @@ public class HoraExacta extends Hora{
     }
     
     @Override
-    public String toString(){ // Como ya tiene el toString overrideado en el main solo hay que poner System.out.println (nombreObjeto) ;
+    public String toString(){
         String hora;
         hora = "Hora exacta ---> "+this.hora+":"+this.minuto+":"+this.segundo;
         return hora;
